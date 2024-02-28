@@ -10,40 +10,98 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: const Text('Home'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('About'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Skill'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Resume'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Projects'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Certifications'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Contact'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+          ],
+        ),
       ),
       body: Center(
         child: Obx(() {
           if (homeViewModel.isLoading.value) {
-            return CircularProgressIndicator();
+            return const CircularProgressIndicator();
           } else {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Display image
                 Image.network(
                   homeViewModel.homeModel.value.image,
                   width: 150,
                   height: 150,
                   fit: BoxFit.cover,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text(
                   homeViewModel.homeModel.value.name,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15.0,right: 15.0),
-                  child: Text(
-                    homeViewModel.homeModel.value.careerObjective,
-                    textAlign: TextAlign.justify,
-                  ),
+                const SizedBox(height: 10),
+                Text(
+                  homeViewModel.homeModel.value.careerObjective,
+                  textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('View Resume'),
+                  child: const Text('View Resume'),
                 ),
               ],
             );
