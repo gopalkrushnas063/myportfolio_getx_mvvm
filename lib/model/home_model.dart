@@ -1,4 +1,3 @@
-// model/home_model.dart
 class HomeModel {
   final String image;
   final String name;

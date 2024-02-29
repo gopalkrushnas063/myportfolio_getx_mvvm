@@ -1,4 +1,3 @@
-// view/home_view.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';

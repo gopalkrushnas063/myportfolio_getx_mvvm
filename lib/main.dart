@@ -1,4 +1,3 @@
-// main.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/routes/routes.dart';

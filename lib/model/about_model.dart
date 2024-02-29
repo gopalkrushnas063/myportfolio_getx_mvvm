@@ -1,4 +1,3 @@
-// model/about_model.dart
 class AboutModel {
   final String position;
   final String name;
