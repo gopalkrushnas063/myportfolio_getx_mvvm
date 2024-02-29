@@ -1,8 +1,9 @@
 // viewmodel/about_view_model.dart
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'package:myportfolio_getx_mvvm/model/about_model.dart';
 import 'dart:convert';
+
+import 'package:myportfolio_getx_mvvm/model/about_model.dart';
 
 
 class AboutViewModel extends GetxController {
@@ -36,7 +37,6 @@ class AboutViewModel extends GetxController {
       var response = await http.get(Uri.parse("https://gopalkrushnas063.github.io/portfolio_json/about.json"));
       if (response.statusCode == 200) {
         var jsonResponse = json.decode(response.body);
-        print(jsonResponse);
         aboutModel(AboutModel.fromJson(jsonResponse[0]));
       } else {
         print('Request failed with status: ${response.statusCode}.');

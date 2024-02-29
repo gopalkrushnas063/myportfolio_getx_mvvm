@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
+import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 
 class HomeView extends StatelessWidget {
   final HomeViewModel homeViewModel = Get.put(HomeViewModel());
@@ -12,67 +13,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-              child: Text(
-                'Menu',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-              title: const Text('Home'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('About'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('Skill'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('Resume'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('Projects'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('Certifications'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-            ListTile(
-              title: const Text('Contact'),
-              onTap: () {
-                Get.back();
-              },
-            ),
-          ],
-        ),
-      ),
+      drawer: buildDrawer(),
       body: Center(
         child: Obx(() {
           if (homeViewModel.isLoading.value) {

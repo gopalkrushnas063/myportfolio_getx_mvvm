@@ -1,0 +1,12 @@
+com.example.portfolio_getx_mvvm.app-jetified-window-1.0.0-beta04-0 /Users/wayinida/.gradle/caches/transforms-3/05afbc50c9d5c51966c5374f153362bd/transformed/jetified-window-1.0.0-beta04/res
+com.example.portfolio_getx_mvvm.app-core-1.6.0-1 /Users/wayinida/.gradle/caches/transforms-3/101e8b389cb95798a7d32ea8dbc0126f/transformed/core-1.6.0/res
+com.example.portfolio_getx_mvvm.app-jetified-window-java-1.0.0-beta04-2 /Users/wayinida/.gradle/caches/transforms-3/a2d5f98bb763a24d25b760f2ecad7a7e/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.portfolio_getx_mvvm.app-jetified-annotation-experimental-1.1.0-3 /Users/wayinida/.gradle/caches/transforms-3/ae2073573988c210f76aee6cffb0c971/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.portfolio_getx_mvvm.app-debug-4 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/android/app/src/debug/res
+com.example.portfolio_getx_mvvm.app-main-5 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/android/app/src/main/res
+com.example.portfolio_getx_mvvm.app-pngs-6 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/generated/res/pngs/debug
+com.example.portfolio_getx_mvvm.app-resValues-7 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/generated/res/resValues/debug
+com.example.portfolio_getx_mvvm.app-rs-8 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/generated/res/rs/debug
+com.example.portfolio_getx_mvvm.app-mergeDebugResources-9 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.portfolio_getx_mvvm.app-mergeDebugResources-10 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.portfolio_getx_mvvm.app-merged_res-11 /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/intermediates/merged_res/debug
