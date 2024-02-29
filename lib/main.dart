@@ -1,6 +1,7 @@
 // main.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myportfolio_getx_mvvm/routes/routes.dart';
 import 'package:myportfolio_getx_mvvm/view/home_view.dart';
 
 void main() {
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeView(), // Entry point to your app
+      getPages: allPage,
+      home: HomeView(),
     );
   }
 }

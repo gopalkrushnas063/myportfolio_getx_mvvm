@@ -1,0 +1,1 @@
+ /Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/.dart_tool/flutter_build/1988f67fb3d16286997603128d8a3db2/native_assets.yaml: 
