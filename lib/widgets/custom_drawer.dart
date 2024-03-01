@@ -1,120 +1,126 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-Widget buildDrawer() {
+Drawer buildDrawer(BuildContext context) {
   return Drawer(
     child: ListView(
       padding: EdgeInsets.zero,
       children: [
-        const DrawerHeader(
-          decoration: BoxDecoration(
+        DrawerHeader(
+          decoration: const BoxDecoration(
             color: Colors.red,
           ),
-          child: Row(
+          child: Center(
+              child: Column(
             children: [
+              const ColorFiltered(
+                colorFilter: ColorFilter.mode(
+                  Colors.white,
+                  BlendMode.srcIn,
+                ),
+                child: FaIcon(
+                  FontAwesomeIcons.star,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
-                'Menu',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+                'PortFolio',
+                style: GoogleFonts.actor(
+                  textStyle: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 21,
+                  ),
+                ),
+              ),
+              Text(
+                "My Profile",
+                style: GoogleFonts.actor(
+                  textStyle: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ],
-          ),
+          )),
         ),
         ListTile(
-          title: const Row(
-            children: [
-              Icon(Icons.home_outlined),
-              SizedBox(width: 10),
-              Text('Home'),
-            ],
+          leading: const Icon(
+            Icons.home_outlined,
+            size: 25,
+          ),
+          title: Text(
+            'Home',
+            style: GoogleFonts.actor(
+              textStyle: const TextStyle(
+                fontSize: 14,
+              ),
+            ),
           ),
           onTap: () {
-            Get.back();
+            Get.toNamed("/");
           },
         ),
         ListTile(
-          title: const Row(
-            children: [
-              Icon(Icons.info_outline),
-              SizedBox(width: 10),
-              Text('About'),
-            ],
+          leading: const Icon(Icons.info_outline),
+          title: Text(
+            'About',
+            style: GoogleFonts.actor(
+              textStyle: const TextStyle(
+                fontSize: 14,
+              ),
+            ),
           ),
           onTap: () {
             Get.toNamed("/about");
           },
         ),
         ListTile(
-          title: const Row(
-            children: [
-              Icon(Icons.memory_outlined),
-              SizedBox(width: 10),
-              Text('Skill'),
-            ],
-          ),
-          onTap: () {
-            Get.back();
-          },
-        ),
-        ListTile(
-          title: const Row(
-            children: [
-              Icon(Icons.file_present_outlined),
-              SizedBox(width: 10),
-              Text('Resume'),
-            ],
-          ),
-          onTap: () {
-            Get.back();
-          },
-        ),
-        ListTile(
-          title: const Row(
-            children: [
-              FaIcon(
-                FontAwesomeIcons.laptopFile,
-                size: 20,
+          leading: const FaIcon(Icons.memory),
+          title: Text(
+            'Skill',
+            style: GoogleFonts.actor(
+              textStyle: const TextStyle(
+                fontSize: 14,
               ),
-              SizedBox(width: 10),
-              Text('Projects'),
-            ],
+            ),
           ),
           onTap: () {
             Get.back();
           },
         ),
         ListTile(
-          title: const Row(
-            children: [
-              Icon(
-                FontAwesomeIcons.award,
-                size: 20,
-              ),
-              SizedBox(width: 10),
-              Text('Certifications'),
-            ],
+          leading: const FaIcon(
+            FontAwesomeIcons.award,
+            size: 22,
           ),
-          onTap: () {
-            Get.back();
-          },
+          title: Text(
+            'Certification',
+            style: GoogleFonts.actor(
+              textStyle: const TextStyle(
+                fontSize: 14,
+              ),
+            ),
+          ),
+          onTap: () {},
         ),
         ListTile(
-          title: const Row(
-            children: [
-              Icon(
-                Icons.contact_mail_outlined,
-                size: 20,
+          leading: const FaIcon(FontAwesomeIcons.file),
+          title: Text(
+            'Resume',
+            style: GoogleFonts.actor(
+              textStyle: const TextStyle(
+                fontSize: 14,
               ),
-              SizedBox(width: 10),
-              Text('Contact'),
-            ],
+            ),
           ),
-          onTap: () {
-            Get.back();
-          },
+          onTap: () {},
         ),
       ],
     ),

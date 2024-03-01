@@ -13,9 +13,32 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: RichText(
+          textAlign: TextAlign.center,
+          text: const TextSpan(
+            children: [
+              TextSpan(
+                text: 'Port',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 21,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextSpan(
+                text: 'Folio',
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 21,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ),
+        centerTitle: true,
       ),
-      drawer: buildDrawer(),
+      drawer: buildDrawer(context),
       body: Center(
         child: Obx(() {
           if (homeViewModel.isLoading.value) {
@@ -77,7 +100,7 @@ class HomeView extends StatelessWidget {
                   ),
                   const SizedBox(height: 5),
                   Padding(
-                    padding: const EdgeInsets.only(left: 18.0,right: 18.0),
+                    padding: const EdgeInsets.only(left: 18.0, right: 18.0),
                     child: SizedBox(
                       width: double.infinity, // Make the button wide
                       child: ElevatedButton(
@@ -94,7 +117,8 @@ class HomeView extends StatelessWidget {
                         ),
                         child: const Text(
                           'View Resume',
-                          style: TextStyle(color: Colors.white), // Set text color
+                          style:
+                              TextStyle(color: Colors.white), // Set text color
                         ),
                       ),
                     ),
