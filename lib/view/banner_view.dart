@@ -18,10 +18,10 @@ class BannerView extends StatelessWidget {
               return const Text('No data available');
             } else {
               return SizedBox(
-                height: 200.0,
+                height: 170.0,
                 child: CarouselSlider.builder(
                   options: CarouselOptions(
-                    height: 200.0,
+                    height: 170.0,
                     autoPlay: true,
                   ),
                   itemCount: bannerViewModel.banners.length,
