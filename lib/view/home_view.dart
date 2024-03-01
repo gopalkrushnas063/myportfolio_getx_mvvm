@@ -1,9 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:myportfolio_getx_mvvm/view/banner_view.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
-import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeView extends StatelessWidget {
   final HomeViewModel homeViewModel = Get.put(HomeViewModel());
@@ -14,7 +14,6 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      drawer: buildDrawer(),
       body: Center(
         child: Obx(() {
           if (homeViewModel.isLoading.value) {
@@ -22,6 +21,7 @@ class HomeView extends StatelessWidget {
           } else {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
@@ -36,7 +36,9 @@ class HomeView extends StatelessWidget {
                 Text(
                   homeViewModel.homeModel.value.name,
                   style: const TextStyle(
-                      fontSize: 24, fontWeight: FontWeight.bold),
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 10),
                 SizedBox(
@@ -58,17 +60,31 @@ class HomeView extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 13.0, right: 13.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 13.0),
                   child: Text(
                     homeViewModel.homeModel.value.careerObjective,
                     textAlign: TextAlign.justify,
                   ),
                 ),
                 const SizedBox(height: 20),
+                Container(
+                  constraints:
+                      const BoxConstraints(maxHeight: 200, maxWidth: 400),
+                  child: BannerView(),
+                ),
+                 const SizedBox(height: 20),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    String url = homeViewModel.homeModel.value.resumeUrl;
+                    try {
+                      await launch(url, forceSafariVC: false);
+                    } catch (e) {
+                      print('Error launching URL: $e');
+                    }
+                  },
                   child: const Text('View Resume'),
                 ),
+                
               ],
             );
           }
