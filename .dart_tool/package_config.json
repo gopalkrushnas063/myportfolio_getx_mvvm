@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animated_text_kit",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/animated_text_kit-4.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
@@ -200,7 +206,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-02-29T06:28:33.527749Z",
+  "generated": "2024-03-01T06:06:30.950850Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

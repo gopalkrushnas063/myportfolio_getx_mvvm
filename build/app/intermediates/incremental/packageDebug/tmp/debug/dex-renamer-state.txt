@@ -1,4 +1,4 @@
-#Thu Feb 29 16:36:18 IST 2024
+#Fri Mar 01 09:47:46 IST 2024
 base.0=/Users/wayinida/Documents/GitHub/myportfolio_getx_mvvm/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

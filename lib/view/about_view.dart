@@ -9,7 +9,14 @@ class AboutView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About'),
+        title: const Text(
+          'About Me',
+          style: TextStyle(
+            color: Colors.red,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: Obx(() {
@@ -93,6 +100,7 @@ class AboutView extends StatelessWidget {
                             LinearProgressIndicator(
                               value:
                                   double.parse(techStack['percentage']) / 100,
+                              color: const Color.fromARGB(255, 199, 43, 32),
                               backgroundColor: Colors.grey[300],
                               minHeight: 10,
                             ),
@@ -126,15 +134,14 @@ class AboutView extends StatelessWidget {
                                   edu['degree'],
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.blue,
+                                    color: Colors.red,
                                   ),
                                 ),
                                 Text(
                                   '(${edu['duration']})',
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color:
-                                        Colors.green,
+                                    color: Colors.grey,
                                   ),
                                 ),
                                 const SizedBox(height: 8),
@@ -174,15 +181,14 @@ class AboutView extends StatelessWidget {
                                   exp['designation'],
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.blue,
+                                    color: Colors.red,
                                   ),
                                 ),
                                 Text(
                                   '(${exp['duration']})',
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color:
-                                        Colors.green,
+                                    color: Colors.grey,
                                   ),
                                 ),
                                 const SizedBox(height: 8),

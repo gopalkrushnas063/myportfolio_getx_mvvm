@@ -6,7 +6,7 @@ import 'package:myportfolio_getx_mvvm/model/home_model.dart';
 
 class HomeViewModel extends GetxController {
   var isLoading = true.obs;
-  var homeModel = HomeModel(image: '',name: '', careerObjective: '', resumeUrl: '').obs;
+  var homeModel = HomeModel(image: '',name: '',position: [], careerObjective: '', resumeUrl: '').obs;
 
   @override
   void onInit() {

@@ -1,4 +1,6 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
 import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
@@ -21,11 +23,14 @@ class HomeView extends StatelessWidget {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network(
-                  homeViewModel.homeModel.value.image,
-                  width: 150,
-                  height: 150,
-                  fit: BoxFit.cover,
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
+                    homeViewModel.homeModel.value.image,
+                    width: 170,
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Text(
@@ -34,9 +39,30 @@ class HomeView extends StatelessWidget {
                       fontSize: 24, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 10),
-                Text(
-                  homeViewModel.homeModel.value.careerObjective,
-                  textAlign: TextAlign.center,
+                SizedBox(
+                  height: 50,
+                  child: DefaultTextStyle(
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.red,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    child: AnimatedTextKit(
+                      animatedTexts: homeViewModel.homeModel.value.position
+                          .map((position) {
+                        return TyperAnimatedText(position);
+                      }).toList(),
+                      repeatForever: true,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 13.0, right: 13.0),
+                  child: Text(
+                    homeViewModel.homeModel.value.careerObjective,
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton(
