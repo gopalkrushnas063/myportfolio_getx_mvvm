@@ -101,7 +101,7 @@ class HomeView extends StatelessWidget {
                     children: [
                       for (var url in imageUrlList)
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 5),
+                          padding: const EdgeInsets.symmetric(horizontal: 5),
                           child: url.endsWith('.svg')
                               ? SvgPicture.network(
                                   url,
@@ -114,7 +114,7 @@ class HomeView extends StatelessWidget {
                         ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 13.0),
                     child: Text(
