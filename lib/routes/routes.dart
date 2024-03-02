@@ -8,7 +8,7 @@ final allPage = [
   GetPage(
     name: "/about",
     page: () => AboutView(),
-    transition: Transition.fadeIn,
+    transition: Transition.circularReveal,
   ),
   // GetPage(
   //   name: "/all_cat_news",

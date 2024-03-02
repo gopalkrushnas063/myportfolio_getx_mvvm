@@ -1,5 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/view/banner_view.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
@@ -11,6 +14,14 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> imageUrlList = [
+      "https://cdn-icons-png.flaticon.com/512/1626/1626319.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
+      "https://user-images.githubusercontent.com/103574856/220100990-cc4ee47d-acb8-4528-ad67-c8cc1eedca68.png",
+      "https://user-images.githubusercontent.com/103574856/220102737-cefd3288-19d3-4a84-8435-3dd5f74a0726.png",
+      "https://user-images.githubusercontent.com/103574856/220101591-caaceff1-df2e-481c-b554-42825a04375d.png",
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: RichText(
@@ -85,6 +96,25 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      for (var url in imageUrlList)
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 5),
+                          child: url.endsWith('.svg')
+                              ? SvgPicture.network(
+                                  url,
+                                  width: 30,
+                                )
+                              : Image.network(
+                                  url,
+                                  width: 30,
+                                ),
+                        ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 13.0),
                     child: Text(
@@ -97,32 +127,7 @@ class HomeView extends StatelessWidget {
                     constraints:
                         const BoxConstraints(maxHeight: 200, maxWidth: 400),
                     child: BannerView(),
-                  ),
-                  const SizedBox(height: 5),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 18.0, right: 18.0),
-                    child: SizedBox(
-                      width: double.infinity, // Make the button wide
-                      child: ElevatedButton(
-                        onPressed: () async {
-                          String url = homeViewModel.homeModel.value.resumeUrl;
-                          try {
-                            await launch(url, forceSafariVC: false);
-                          } catch (e) {
-                            print('Error launching URL: $e');
-                          }
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.red, // Set background color
-                        ),
-                        child: const Text(
-                          'View Resume',
-                          style:
-                              TextStyle(color: Colors.white), // Set text color
-                        ),
-                      ),
-                    ),
-                  ),
+                  ),                  
                 ],
               ),
             );

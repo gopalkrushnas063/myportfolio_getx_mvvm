@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 Drawer buildDrawer(BuildContext context) {
@@ -14,41 +13,42 @@ Drawer buildDrawer(BuildContext context) {
             color: Colors.red,
           ),
           child: Center(
-              child: Column(
-            children: [
-              const ColorFiltered(
-                colorFilter: ColorFilter.mode(
-                  Colors.white,
-                  BlendMode.srcIn,
-                ),
-                child: FaIcon(
-                  FontAwesomeIcons.star,
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                'PortFolio',
-                style: GoogleFonts.actor(
-                  textStyle: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 21,
+            child: Column(
+              children: [
+                const ColorFiltered(
+                  colorFilter: ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                  child: FaIcon(
+                    FontAwesomeIcons.star,
                   ),
                 ),
-              ),
-              Text(
-                "My Profile",
-                style: GoogleFonts.actor(
-                  textStyle: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'PortFolio',
+                  style: GoogleFonts.actor(
+                    textStyle: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 21,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          )),
+                Text(
+                  "My Profile",
+                  style: GoogleFonts.actor(
+                    textStyle: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
         ListTile(
           leading: const Icon(
@@ -81,19 +81,53 @@ Drawer buildDrawer(BuildContext context) {
             Get.toNamed("/about");
           },
         ),
-        ListTile(
+        ExpansionTile(
+          initiallyExpanded: true,
           leading: const FaIcon(Icons.memory),
           title: Text(
-            'Skill',
+            'Skills',
             style: GoogleFonts.actor(
               textStyle: const TextStyle(
                 fontSize: 14,
               ),
             ),
           ),
-          onTap: () {
-            Get.back();
-          },
+          children: [
+            ListTile(
+              title: Padding(
+                padding: const EdgeInsets.only(left:38.0),
+                child: Text(
+                  'Soft Skills',
+                  style: GoogleFonts.actor(
+                    textStyle: const TextStyle(
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ),
+              onTap: () {
+                // Handle user skills tap
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: Padding(
+                padding: const EdgeInsets.only(left:38.0),
+                child: Text(
+                  'Tech Skills',
+                  style: GoogleFonts.actor(
+                    textStyle: const TextStyle(
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ),
+              onTap: () {
+                // Handle vendor skills tap
+                Get.back();
+              },
+            ),
+          ],
         ),
         ListTile(
           leading: const FaIcon(
