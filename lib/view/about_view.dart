@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/about_view_model.dart';
 
 class AboutView extends StatelessWidget {
@@ -31,12 +32,12 @@ class AboutView extends StatelessWidget {
                 children: [
                   Text(
                     'I am ${aboutViewModel.aboutModel.value.name}',
-                    style: const TextStyle(
+                    style: GoogleFonts.aBeeZee(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     aboutViewModel.aboutModel.value.position,
-                    style: const TextStyle(
+                    style: GoogleFonts.aBeeZee(
                         fontSize: 18,
                         color: Colors.red,
                         fontWeight: FontWeight.bold),
@@ -44,7 +45,7 @@ class AboutView extends StatelessWidget {
                   const SizedBox(height: 8),
                   Text(
                     aboutViewModel.aboutModel.value.about,
-                    style: const TextStyle(fontSize: 12),
+                    style: GoogleFonts.aBeeZee(fontSize: 12),
                     textAlign: TextAlign.justify,
                   ),
                   const SizedBox(height: 16),
@@ -74,9 +75,10 @@ class AboutView extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  const Text(
+                  Text(
                     'Percentage Tech Stack:',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.aBeeZee(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
                   Column(
@@ -91,8 +93,8 @@ class AboutView extends StatelessWidget {
                           children: [
                             Text(
                               '${techStack['stack_name']} (${techStack['percentage']}%)',
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.w500),
+                              style: GoogleFonts.aBeeZee(
+                                  fontWeight: FontWeight.w500),
                             ),
                             LinearProgressIndicator(
                               value:
@@ -107,9 +109,10 @@ class AboutView extends StatelessWidget {
                     }).toList(),
                   ),
                   const SizedBox(height: 16),
-                  const Text(
+                  Text(
                     'Education:',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.aBeeZee(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,14 +132,14 @@ class AboutView extends StatelessWidget {
                               children: [
                                 Text(
                                   edu['degree'],
-                                  style: const TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
                                 ),
                                 Text(
                                   '(${edu['duration']})',
-                                  style: const TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.grey,
                                   ),
@@ -144,6 +147,7 @@ class AboutView extends StatelessWidget {
                                 const SizedBox(height: 8),
                                 Text(
                                   edu['desc'],
+                                  style: GoogleFonts.aBeeZee(),
                                   textAlign: TextAlign.justify,
                                 ),
                               ],
@@ -154,9 +158,9 @@ class AboutView extends StatelessWidget {
                     }).toList(),
                   ),
                   const SizedBox(height: 16),
-                  const Text(
+                   Text(
                     'Experience:',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.aBeeZee(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,14 +180,14 @@ class AboutView extends StatelessWidget {
                               children: [
                                 Text(
                                   exp['designation'],
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                  style: GoogleFonts.aBeeZee(
+                                    fontWeight: FontWeight.w600,
                                     color: Colors.red,
                                   ),
                                 ),
                                 Text(
                                   '(${exp['duration']})',
-                                  style: const TextStyle(
+                                  style:GoogleFonts.aBeeZee(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.grey,
                                   ),
@@ -191,6 +195,7 @@ class AboutView extends StatelessWidget {
                                 const SizedBox(height: 8),
                                 Text(
                                   exp['desc'],
+                                  style: GoogleFonts.aBeeZee(),
                                   textAlign: TextAlign.justify,
                                 ),
                               ],
@@ -217,14 +222,19 @@ class AboutView extends StatelessWidget {
             padding: const EdgeInsets.only(left: 4.0),
             child: Text(
               label,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: GoogleFonts.aBeeZee(
+                  fontWeight: FontWeight.w600, fontSize: 12),
             ),
           ),
         ),
         TableCell(
           child: Padding(
             padding: const EdgeInsets.all(2.0),
-            child: Text(value),
+            child: Text(
+              value,
+              style: GoogleFonts.aBeeZee(
+                  fontWeight: FontWeight.w400, fontSize: 12),
+            ),
           ),
         ),
       ],

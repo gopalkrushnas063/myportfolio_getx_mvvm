@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myportfolio_getx_mvvm/view/banner_view.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
 import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
@@ -26,11 +27,11 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: RichText(
           textAlign: TextAlign.center,
-          text: const TextSpan(
+          text:  TextSpan(
             children: [
               TextSpan(
                 text: 'Port',
-                style: TextStyle(
+                style: GoogleFonts.aBeeZee(
                   color: Colors.black,
                   fontSize: 21,
                   fontWeight: FontWeight.bold,
@@ -38,7 +39,7 @@ class HomeView extends StatelessWidget {
               ),
               TextSpan(
                 text: 'Folio',
-                style: TextStyle(
+                style: GoogleFonts.aBeeZee(
                   color: Colors.red,
                   fontSize: 21,
                   fontWeight: FontWeight.bold,
@@ -72,7 +73,7 @@ class HomeView extends StatelessWidget {
                   const SizedBox(height: 20),
                   Text(
                     homeViewModel.homeModel.value.name,
-                    style: const TextStyle(
+                    style: GoogleFonts.aBeeZee(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -82,7 +83,7 @@ class HomeView extends StatelessWidget {
                     height: 50,
                     child: DefaultTextStyle(
                       textAlign: TextAlign.center,
-                      style: const TextStyle(
+                      style: GoogleFonts.aBeeZee(
                         fontSize: 18.0,
                         color: Colors.red,
                         fontWeight: FontWeight.w500,
@@ -119,6 +120,7 @@ class HomeView extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 13.0),
                     child: Text(
                       homeViewModel.homeModel.value.careerObjective,
+                      style: GoogleFonts.aBeeZee(),
                       textAlign: TextAlign.justify,
                     ),
                   ),

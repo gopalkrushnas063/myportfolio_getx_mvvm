@@ -117,7 +117,7 @@
     },
     {
       "name": "google_fonts",
-      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/google_fonts-6.1.0",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/google_fonts-6.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -410,7 +410,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-03-02T07:25:21.394584Z",
+  "generated": "2024-03-02T07:40:47.625604Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
