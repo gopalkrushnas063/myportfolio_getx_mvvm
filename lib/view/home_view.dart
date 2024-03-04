@@ -10,6 +10,9 @@ import 'package:myportfolio_getx_mvvm/viewmodel/home_view_model.dart';
 import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
+
+
 class HomeView extends StatelessWidget {
   final HomeViewModel homeViewModel = Get.put(HomeViewModel());
 

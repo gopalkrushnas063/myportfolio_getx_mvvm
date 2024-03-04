@@ -3,6 +3,9 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/about_view_model.dart';
+import 'package:myportfolio_getx_mvvm/widgets/pie_chart_widget.dart';
+import 'package:myportfolio_getx_mvvm/widgets/settings_widget.dart';
+import 'package:pie_chart/pie_chart.dart';
 
 class AboutView extends StatelessWidget {
   final AboutViewModel aboutViewModel = Get.put(AboutViewModel());
@@ -75,10 +78,42 @@ class AboutView extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
+                  LayoutBuilder(
+                    builder: (_, constraints) {
+                      if (constraints.maxWidth >= 600) {
+                        return Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              flex: 3,
+                              child: PieChartWidget(),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: SettingsWidget(),
+                            ),
+                          ],
+                        );
+                      } else {
+                        return SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.symmetric(vertical: 32),
+                                child: PieChartWidget(),
+                              ),
+                              SettingsWidget(),
+                            ],
+                          ),
+                        );
+                      }
+                    },
+                  ),
+                  const SizedBox(height: 16),
                   Text(
                     'Percentage Tech Stack:',
                     style: GoogleFonts.aBeeZee(
-                        fontSize: 16, fontWeight: FontWeight.bold),
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
                   Column(
@@ -108,12 +143,13 @@ class AboutView extends StatelessWidget {
                       );
                     }).toList(),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 28),
                   Text(
                     'Education:',
                     style: GoogleFonts.aBeeZee(
-                        fontSize: 16, fontWeight: FontWeight.bold),
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
+                  const SizedBox(height: 10),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:
@@ -157,11 +193,13 @@ class AboutView extends StatelessWidget {
                       );
                     }).toList(),
                   ),
-                  const SizedBox(height: 16),
-                   Text(
+                  const SizedBox(height: 21),
+                  Text(
                     'Experience:',
-                    style: GoogleFonts.aBeeZee(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.aBeeZee(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
+                  const SizedBox(height: 10),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:
@@ -187,7 +225,7 @@ class AboutView extends StatelessWidget {
                                 ),
                                 Text(
                                   '(${exp['duration']})',
-                                  style:GoogleFonts.aBeeZee(
+                                  style: GoogleFonts.aBeeZee(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.grey,
                                   ),
