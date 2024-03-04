@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/view/about_view.dart';
 import 'package:myportfolio_getx_mvvm/view/home_view.dart';
+import 'package:myportfolio_getx_mvvm/view/soft_skill_view.dart';
 
 
 final allPage = [
@@ -10,15 +11,11 @@ final allPage = [
     page: () => AboutView(),
     transition: Transition.circularReveal,
   ),
-  // GetPage(
-  //   name: "/all_cat_news",
-  //   page: () => AllCategoryWiseNewsPage(),
-  //   transition: Transition.fadeIn,
-  // ),
-  // GetPage(
-  //   name: "/switch_languages",
-  //   page: () => SwitchLanguageScreen(),
-  //   transition: Transition.fadeIn,
-  // ),
+  GetPage(
+    name: "/soft_skill",
+    page: () => SoftSkillView(),
+    transition: Transition.fadeIn,
+  ),
+
   
 ];

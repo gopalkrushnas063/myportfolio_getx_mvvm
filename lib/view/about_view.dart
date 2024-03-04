@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myportfolio_getx_mvvm/controller/dat_controller.dart';
+import 'package:myportfolio_getx_mvvm/controller/pichart_controller.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/about_view_model.dart';
 import 'package:myportfolio_getx_mvvm/widgets/pie_chart_widget.dart';
 import 'package:myportfolio_getx_mvvm/widgets/settings_widget.dart';
-import 'package:pie_chart/pie_chart.dart';
 
+// ignore: use_key_in_widget_constructors
 class AboutView extends StatelessWidget {
   final AboutViewModel aboutViewModel = Get.put(AboutViewModel());
+  final PieChartController pieChartController = Get.put(PieChartController());
+  final DataController dataController = Get.put(DataController());
+
 
   @override
   Widget build(BuildContext context) {
@@ -54,9 +59,9 @@ class AboutView extends StatelessWidget {
                   const SizedBox(height: 16),
                   Table(
                     border: TableBorder.all(color: Colors.grey),
-                    columnWidths: {
-                      0: const FlexColumnWidth(1),
-                      1: const FlexColumnWidth(3),
+                    columnWidths: const {
+                      0: FlexColumnWidth(1),
+                      1: FlexColumnWidth(3),
                     },
                     children: [
                       _buildTableRow(
@@ -99,7 +104,8 @@ class AboutView extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                margin: const EdgeInsets.symmetric(vertical: 32),
+                                margin:
+                                    const EdgeInsets.symmetric(vertical: 32),
                                 child: PieChartWidget(),
                               ),
                               SettingsWidget(),

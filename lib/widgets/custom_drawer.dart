@@ -107,7 +107,7 @@ Drawer buildDrawer(BuildContext context) {
               ),
               onTap: () {
                 // Handle user skills tap
-                Get.back();
+                Get.toNamed("/soft_skill");
               },
             ),
             ListTile(

@@ -22,5 +22,6 @@ class DataController extends GetxController {
     [const Color.fromRGBO(223, 250, 92, 1), const Color.fromRGBO(129, 250, 112, 1)],
     [const Color.fromRGBO(129, 182, 205, 1), const Color.fromRGBO(91, 253, 199, 1)],
     [const Color.fromRGBO(175, 63, 62, 1.0), const Color.fromRGBO(254, 154, 92, 1)],
+    [const Color.fromARGB(255, 86, 62, 175), const Color.fromARGB(255, 254, 92, 176)],
   ];
 }

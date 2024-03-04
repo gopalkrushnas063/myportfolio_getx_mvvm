@@ -18,7 +18,7 @@ class PieChartWidget extends StatelessWidget {
         dataMap: Get.find<DataController>().dataMap.value,
         animationDuration: const Duration(milliseconds: 800),
         chartLegendSpacing: pieChartController.chartLegendSpacing.value,
-        chartRadius: math.min(MediaQuery.of(context).size.width / 3.2, 300),
+        chartRadius: math.min(MediaQuery.of(context).size.width / 2.5, 200),
         colorList: Get.find<DataController>().colorList,
         initialAngleInDegree: 0,
         chartType: pieChartController.chartType.value,
@@ -27,6 +27,7 @@ class PieChartWidget extends StatelessWidget {
             ? Container(child: const Text(""))
             : null,
         legendLabels: pieChartController.showLegendLabel.value
+    // ignore: invalid_use_of_protected_member
     ? Map<String, String>.from(Get.find<DataController>().dataMap.value.map(
         (key, value) => MapEntry(key, value.toString())))
     : {},

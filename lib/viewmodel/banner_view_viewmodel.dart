@@ -18,7 +18,6 @@ class BannerViewModel extends GetxController {
       var response = await http.get(Uri.parse('https://gopalkrushnas063.github.io/portfolio_json/banner.json'));
       if (response.statusCode == 200) {
         List<dynamic> jsonData = json.decode(response.body);
-        print(jsonData);
         banners.assignAll(jsonData.map((model) => BannerModel.fromJson(model)).toList());
       } else {
         print('Failed to load data');
