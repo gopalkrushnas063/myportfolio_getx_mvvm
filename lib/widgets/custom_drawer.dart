@@ -82,7 +82,7 @@ Drawer buildDrawer(BuildContext context) {
           },
         ),
         ExpansionTile(
-          initiallyExpanded: true,
+          // initiallyExpanded: true,
           leading: const FaIcon(Icons.memory),
           title: Text(
             'Skills',
@@ -94,14 +94,15 @@ Drawer buildDrawer(BuildContext context) {
           ),
           children: [
             ListTile(
-              title: Padding(
-                padding: const EdgeInsets.only(left:38.0),
-                child: Text(
-                  'Soft Skills',
-                  style: GoogleFonts.actor(
-                    textStyle: const TextStyle(
-                      fontSize: 14,
-                    ),
+              leading: const FaIcon(
+                FontAwesomeIcons.brain,
+                size: 22,
+              ),
+              title: Text(
+                'Soft Skills',
+                style: GoogleFonts.actor(
+                  textStyle: const TextStyle(
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -111,20 +112,17 @@ Drawer buildDrawer(BuildContext context) {
               },
             ),
             ListTile(
-              title: Padding(
-                padding: const EdgeInsets.only(left:38.0),
-                child: Text(
-                  'Tech Skills',
-                  style: GoogleFonts.actor(
-                    textStyle: const TextStyle(
-                      fontSize: 14,
-                    ),
+              leading: const Icon(Icons.power),
+              title: Text(
+                'Tech Skills',
+                style: GoogleFonts.actor(
+                  textStyle: const TextStyle(
+                    fontSize: 14,
                   ),
                 ),
               ),
               onTap: () {
-                // Handle vendor skills tap
-                Get.back();
+                Get.toNamed("/tech_skill");
               },
             ),
           ],

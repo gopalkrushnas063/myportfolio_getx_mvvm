@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:myportfolio_getx_mvvm/model/soft_skill_model.dart';
 
 class SoftSkillViewModel extends GetxController {
+   var isLoading = true.obs;
   var softSkills = <SoftSkillModel>[].obs;
 
   @override
@@ -23,6 +24,8 @@ class SoftSkillViewModel extends GetxController {
       }
     } catch (e) {
       print(e);
+    } finally {
+      isLoading.value = false;
     }
   }
 }
