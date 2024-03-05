@@ -12,3 +12,6 @@ url_launcher_linux=/Users/wayinida/.pub-cache/hosted/pub.dev/url_launcher_linux-
 url_launcher_macos=/Users/wayinida/.pub-cache/hosted/pub.dev/url_launcher_macos-3.1.0/
 url_launcher_web=/Users/wayinida/.pub-cache/hosted/pub.dev/url_launcher_web-2.3.0/
 url_launcher_windows=/Users/wayinida/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.1/
+webview_flutter=/Users/wayinida/.pub-cache/hosted/pub.dev/webview_flutter-4.7.0/
+webview_flutter_android=/Users/wayinida/.pub-cache/hosted/pub.dev/webview_flutter_android-3.15.0/
+webview_flutter_wkwebview=/Users/wayinida/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.12.0/
