@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
         () {
           final controller = Get.find<BottomNavigationController>();
           return ConvexAppBar(
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.red,
             items: const [
               TabItem(icon: Icons.home, title: 'Home'),
               TabItem(icon: Icons.person, title: 'About'),

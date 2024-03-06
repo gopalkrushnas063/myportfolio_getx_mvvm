@@ -143,7 +143,9 @@ Drawer buildDrawer(BuildContext context) {
                     ),
                   ),
                 ),
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed("/projects");
+                },
               ),
               ListTile(
                 leading: const FaIcon(
