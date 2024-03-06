@@ -68,6 +68,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "convex_bottom_bar",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/convex_bottom_bar-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
@@ -518,7 +524,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-03-05T09:28:09.032360Z",
+  "generated": "2024-03-06T06:54:38.436176Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

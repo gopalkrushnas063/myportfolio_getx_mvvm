@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/view/about_view.dart';
 import 'package:myportfolio_getx_mvvm/view/home_view.dart';
+import 'package:myportfolio_getx_mvvm/view/lang_tools.dart';
 import 'package:myportfolio_getx_mvvm/view/soft_skill_view.dart';
 import 'package:myportfolio_getx_mvvm/view/tech_skill_view.dart';
-
 
 final allPage = [
   GetPage(name: "/", page: () => HomeView()),
@@ -22,4 +22,9 @@ final allPage = [
     page: () => TechSkillView(),
     transition: Transition.fadeIn,
   ),
+  GetPage(
+    name: "/lang_tools",
+    page: () => LanguagesAndTools(),
+    transition: Transition.leftToRightWithFade,
+  )
 ];
