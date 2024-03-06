@@ -62,7 +62,7 @@ class SoftSkillView extends StatelessWidget {
                             skill.title,
                             style: const TextStyle(
                               color: Colors.black,
-                              fontSize: 18,
+                              fontSize: 12,
                               fontWeight: FontWeight.bold,
                             ),
                             textAlign: TextAlign.center,
@@ -103,8 +103,8 @@ class SoftSkillView extends StatelessWidget {
           children: [
             Image.network(
               skill.imageUrl,
-              height: 200,
-              fit: BoxFit.cover,
+              height: 150,
+              fit: BoxFit.fitHeight,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -112,7 +112,7 @@ class SoftSkillView extends StatelessWidget {
                 skill.title,
                 style: const TextStyle(
                   color: Colors.black,
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
@@ -124,8 +124,9 @@ class SoftSkillView extends StatelessWidget {
                 skill.description,
                 style: const TextStyle(
                   color: Colors.black,
-                  fontSize: 16,
+                  fontSize: 12,
                 ),
+                maxLines: 2,
                 textAlign: TextAlign.justify,
               ),
             ),
