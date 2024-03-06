@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myportfolio_getx_mvvm/controller/dat_controller.dart';
 import 'package:myportfolio_getx_mvvm/controller/pichart_controller.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/about_view_model.dart';
+import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 import 'package:myportfolio_getx_mvvm/widgets/pie_chart_widget.dart';
 import 'package:myportfolio_getx_mvvm/widgets/settings_widget.dart';
 
@@ -28,6 +29,7 @@ class AboutView extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      drawer: buildDrawer(context),
       body: Center(
         child: Obx(() {
           if (aboutViewModel.isLoading.value) {

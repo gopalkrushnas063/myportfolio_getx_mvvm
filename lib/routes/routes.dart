@@ -32,5 +32,6 @@ final allPage = [
     name: "/projects",
     page: () => ProjectView(),
     transition: Transition.leftToRightWithFade,
-  )
+  ),
+  
 ];

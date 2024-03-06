@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/model/tech_skill_model.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/tech_skill_viewmodel.dart';
+import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 
 class TechSkillView extends StatelessWidget {
   final TechSkillViewModel _controller = Get.put(TechSkillViewModel());
@@ -14,6 +15,7 @@ class TechSkillView extends StatelessWidget {
         title: const Text('Tech Skills'),
         elevation: 0,
       ),
+      drawer: buildDrawer(context),
       body: Obx(() {
         if (_controller.isLoading.value) {
           return Center(

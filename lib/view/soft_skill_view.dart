@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/model/soft_skill_model.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/soft_skill_viemodel.dart';
+import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 
 class SoftSkillView extends StatelessWidget {
   final SoftSkillViewModel _controller = Get.put(SoftSkillViewModel());
@@ -13,6 +14,7 @@ class SoftSkillView extends StatelessWidget {
         title: const Text('Soft Skills'),
         elevation: 0,
       ),
+      drawer: buildDrawer(context),
       body: Obx(() {
         if (_controller.isLoading.value) {
           return Center(

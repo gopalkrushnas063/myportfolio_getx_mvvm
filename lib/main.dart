@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myportfolio_getx_mvvm/controller/dat_controller.dart';
-import 'package:myportfolio_getx_mvvm/controller/pichart_controller.dart';
 import 'package:myportfolio_getx_mvvm/routes/routes.dart';
 import 'package:myportfolio_getx_mvvm/view/home_page.dart';
-import 'package:myportfolio_getx_mvvm/view/home_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'My PortFolio',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       initialRoute: '/',
       getPages: allPage,

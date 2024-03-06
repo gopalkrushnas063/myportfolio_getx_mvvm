@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myportfolio_getx_mvvm/model/project_model.dart';
 import 'package:myportfolio_getx_mvvm/viewmodel/project_view_viewmodel.dart';
+import 'package:myportfolio_getx_mvvm/widgets/custom_drawer.dart';
 
 class ProjectView extends StatelessWidget {
   final ProjectViewModel projectController = Get.put(ProjectViewModel());
@@ -13,6 +14,7 @@ class ProjectView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Projects'),
       ),
+      drawer: buildDrawer(context),
       body: Obx(
         () => projectController.projects.isEmpty
             ? const Center(
@@ -56,7 +58,7 @@ class ProjectView extends StatelessWidget {
                               // Title
                               Text(
                                 project.name,
-                                style: const TextStyle(
+                                style:  GoogleFonts.aBeeZee(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
@@ -64,46 +66,91 @@ class ProjectView extends StatelessWidget {
                               const SizedBox(height: 5),
                               Text(
                                 project.description,
-                                style: const TextStyle(fontSize: 14),
+                                style:  GoogleFonts.aBeeZee(fontSize: 14),
                                 textAlign: TextAlign.justify,
                               ),
+                              const SizedBox(height: 10),
                               Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: project.technologies.map((tech) {
                                   Widget imageWidget;
                                   switch (tech.toLowerCase()) {
                                     case 'flutter':
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/flutter.png',
-                                        height: 50,
-                                        width: 50,
+                                        height: 30,
+                                        width: 40,
                                       );
                                       break;
                                     case 'dart':
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/dart.png',
-                                        height: 50,
+                                        height: 30,
                                         width: 50,
                                       );
                                       break;
                                     case 'html':
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/html.png',
-                                        height: 50,
+                                        height: 30,
                                         width: 50,
                                       );
                                       break;
                                     case 'css':
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/css.png',
-                                        height: 50,
+                                        height: 30,
                                         width: 50,
                                       );
                                       break;
                                     case 'android':
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/android.png',
-                                        height: 50,
+                                        height: 40,
+                                        width: 50,
+                                      );
+                                      break;
+                                    case 'firebase':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/firebase.png',
+                                        height: 30,
+                                        width: 50,
+                                      );
+                                      break;
+
+                                    case 'mysql':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/mysql.png',
+                                        height: 30,
+                                        width: 50,
+                                      );
+                                      break;
+                                    case 'intellij':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/intellij.png',
+                                        height: 30,
+                                        width: 50,
+                                      );
+                                      break;
+                                    case 'javascript':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/js.png',
+                                        height: 30,
+                                        width: 50,
+                                      );
+                                      break;
+                                    case 'vscode':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/vscode.png',
+                                        height: 30,
+                                        width: 50,
+                                      );
+                                      break;
+                                    case 'maven':
+                                      imageWidget = Image.network(
+                                        'https://gopalkrushnas063.github.io/images/skills/maven.png',
+                                        height: 30,
                                         width: 50,
                                       );
                                       break;
@@ -115,7 +162,7 @@ class ProjectView extends StatelessWidget {
                                         ),
                                         child: Image.network(
                                           'https://gopalkrushnas063.github.io/images/gitHub.png',
-                                          height: 50,
+                                          height: 35,
                                           width: 50,
                                         ),
                                       );
@@ -123,7 +170,7 @@ class ProjectView extends StatelessWidget {
                                     default:
                                       imageWidget = Image.network(
                                         'https://gopalkrushnas063.github.io/images/skills/java.png',
-                                        height: 50,
+                                        height: 30,
                                         width: 50,
                                       );
                                   }
