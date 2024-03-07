@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		pvZRune2taxXyJMC9pEc35RsNsU=
+		xkEuqYCFUwjGILDpvx3ckxjliKE=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Ids4w0XW0oYvL2UAd1AJ5BzKakY=
+		skImJRI6UqQlkgonAm8oxFtYs5s=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,11 +22,19 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		LosShesRabD5bowtnuamRR/1QBI=
+		R51ga1PMtEUS61ZcH9SeKUSbOMI=
 		</data>
 		<key>flutter_assets/assets/images/file.svg</key>
 		<data>
 		4EURnewBSNTcY4VNHF9AT+t0LHU=
+		</data>
+		<key>flutter_assets/assets/images/git_stats.png</key>
+		<data>
+		rn9UQdKEqgxYFdLPCOI4jZvQBVM=
+		</data>
+		<key>flutter_assets/assets/pdf/flutter.pdf</key>
+		<data>
+		5ZOgirqwzKquU4+9mH07HcSFAJg=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -38,7 +46,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		EZb0UZWkO/VgLmmld7JMImsNrEU=
+		xqkzCb6URQarSXd6E//rM8Edk+I=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -56,6 +64,22 @@
 		<data>
 		TUSaOF+qYP1yUqIKIZJXYo8TmyA=
 		</data>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/highlight.png</key>
+		<data>
+		r8WwBQ+evCnGl7x3gU424p2NOUQ=
+		</data>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/squiggly.png</key>
+		<data>
+		08snBsdc665o4HaZwcBUSGUi3n4=
+		</data>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/strikethrough.png</key>
+		<data>
+		72Ix7h+1yekr/NFApyVZ08SfB7A=
+		</data>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/underline.png</key>
+		<data>
+		hSFDTS+dWKAnd1+jRfvucwSSK5w=
+		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
 		hBZgIGdEvhX+IvXd5bjkjJVu6+s=
@@ -71,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WdH1HMLBFzjF1MU7nsN/TG50DRoR4rii8qEPb5THIvw=
+			Yy03XMZ6FHdZIYQVODAiaTEhqFCnG3th7dkFxgUk+aI=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/MzOyMWKZocAw7Z2Dhj7mX58HT82zVqg3QTDD3lSJ4=
+			0jCMcvwojHL6PZuoe8CjKaoliVVT3cJuthUAEh4Q6a4=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -92,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpG8XiCzOjEwtMgB8xbwJa38IeHoU1biRbnxa3mIvZQ=
+			icBcwg/YSF1uWbTk7STi/59amdA1Cvinwj0YHF0X76c=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/file.svg</key>
@@ -100,6 +124,20 @@
 			<key>hash2</key>
 			<data>
 			IKqQWfhKZrKpKjrzSYAiA6Vm2jSZBDEuRQgvUjmEiUE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/git_stats.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DKmfsqkTax97ZKyYpYUhi2tZL7Y6IX0GizRluy/8w44=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/pdf/flutter.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z8l8XfmfmOCgsQR/n72q9phqRtUDeYbAQD6yHqiH79Q=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -120,7 +158,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5JZD3Au0moU4ec2XjVSy72OnOyV3IEa63/gF8XHLy44=
+			ooHmOijltxmwX7l+dfJF5y6cK3XJ4EVH9QI78qGtd0c=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -149,6 +187,34 @@
 			<key>hash2</key>
 			<data>
 			8c4NoSoB9+wVrmnE7VSZnqh1vSNuYv71isTdvLObNno=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/highlight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7S9xpxKH0Xe8w1gpKG7EgrRm6yNwRonaEyX5rw0olao=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/squiggly.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7bgfUlMdMgbze9YmpXWeWXrdlJflb2QkWeJZNb3PpQs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/strikethrough.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bbNUrnKxl2z24VaWk+oENMcdr9+GlbqUIYgDhGWtNC0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/underline.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k5XgJGUcOFg9eqyiJGr0eAO2lgw62E3iNyghuKXMoE8=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

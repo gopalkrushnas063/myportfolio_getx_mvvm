@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/view/about_view.dart';
+import 'package:myportfolio_getx_mvvm/view/certification_view.dart';
 import 'package:myportfolio_getx_mvvm/view/home_view.dart';
 import 'package:myportfolio_getx_mvvm/view/lang_tools.dart';
 import 'package:myportfolio_getx_mvvm/view/project_view.dart';
@@ -31,6 +32,11 @@ final allPage = [
   GetPage(
     name: "/projects",
     page: () => ProjectView(),
+    transition: Transition.leftToRightWithFade,
+  ),
+  GetPage(
+    name: "/certification",
+    page: () => CertificationView(),
     transition: Transition.leftToRightWithFade,
   ),
   

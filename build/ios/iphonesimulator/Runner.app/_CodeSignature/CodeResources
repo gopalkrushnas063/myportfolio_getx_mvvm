@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		HtVT7MUw8Ma6bBgORRwW1wOtVDE=
+		4A7GsYXDsc2WE7tacRfNYOtbmjk=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		6jasNaAtnoRmjXrqn0PKNikoQe4=
+		FZsDANIdvlTsnTTjOfSrU7SHbkQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		pvZRune2taxXyJMC9pEc35RsNsU=
+		xkEuqYCFUwjGILDpvx3ckxjliKE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		Ids4w0XW0oYvL2UAd1AJ5BzKakY=
+		skImJRI6UqQlkgonAm8oxFtYs5s=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,11 +70,19 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		LosShesRabD5bowtnuamRR/1QBI=
+		R51ga1PMtEUS61ZcH9SeKUSbOMI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/file.svg</key>
 		<data>
 		4EURnewBSNTcY4VNHF9AT+t0LHU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/git_stats.png</key>
+		<data>
+		rn9UQdKEqgxYFdLPCOI4jZvQBVM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/pdf/flutter.pdf</key>
+		<data>
+		5ZOgirqwzKquU4+9mH07HcSFAJg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -86,7 +94,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		EZb0UZWkO/VgLmmld7JMImsNrEU=
+		xqkzCb6URQarSXd6E//rM8Edk+I=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -103,6 +111,22 @@
 		<key>Frameworks/App.framework/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<data>
 		TUSaOF+qYP1yUqIKIZJXYo8TmyA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/highlight.png</key>
+		<data>
+		r8WwBQ+evCnGl7x3gU424p2NOUQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/squiggly.png</key>
+		<data>
+		08snBsdc665o4HaZwcBUSGUi3n4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/strikethrough.png</key>
+		<data>
+		72Ix7h+1yekr/NFApyVZ08SfB7A=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/underline.png</key>
+		<data>
+		hSFDTS+dWKAnd1+jRfvucwSSK5w=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -200,6 +224,30 @@
 		<data>
 		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
 		</data>
+		<key>Frameworks/device_info_plus.framework/Info.plist</key>
+		<data>
+		ycVYx6w3C2hIvjEWxByRdDRyFSU=
+		</data>
+		<key>Frameworks/device_info_plus.framework/_CodeSignature/CodeResources</key>
+		<data>
+		DeOPw968zJVtRGXrx5lSAWbiPJo=
+		</data>
+		<key>Frameworks/device_info_plus.framework/device_info_plus</key>
+		<data>
+		/s3ouWvotiUmILUyCwjYhU9WohQ=
+		</data>
+		<key>Frameworks/flutter_pdfview.framework/Info.plist</key>
+		<data>
+		VqggCFEHgh0bw1OaIcZuSrD4lyc=
+		</data>
+		<key>Frameworks/flutter_pdfview.framework/_CodeSignature/CodeResources</key>
+		<data>
+		J55KOSyPKIWmb17gF4eSyGKdy18=
+		</data>
+		<key>Frameworks/flutter_pdfview.framework/flutter_pdfview</key>
+		<data>
+		tywDHgdaqp/fPXC0ez+Zryv0Kfg=
+		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
 		3dGhmiABxUAbOwmQohAxr9b0xPQ=
@@ -239,6 +287,18 @@
 		<key>Frameworks/sqflite.framework/sqflite_darwin_privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		YIiJ5tHvqBeSpBm2mcfVZdaGz3E=
+		</data>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/Info.plist</key>
+		<data>
+		P/Oi1P4fylYQjPpejObH0RcZDH8=
+		</data>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WlQep6v5NiMvbJN3oDRg0IBnWco=
+		</data>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/syncfusion_flutter_pdfviewer</key>
+		<data>
+		1hJJcEgJPG9SkF02fanbXbILUcQ=
 		</data>
 		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
 		<data>
@@ -365,7 +425,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5LdMx2H/392f0Qw3h5RAWZZUFrb+l35MVAW9VE47g3Q=
+			3y2WgR+56nbbu8trEl2G+4q1rXWg1YDs3KrYnfrBbHA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -379,21 +439,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aI5OPX79i4wtj9Jrbw40t6aVEPp4NITx8hXUzLkhaVw=
+			GSWXbfYpnqXu+hbx4zZc2kLH/EpANeQSNcmO+b/Tb4Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WdH1HMLBFzjF1MU7nsN/TG50DRoR4rii8qEPb5THIvw=
+			Yy03XMZ6FHdZIYQVODAiaTEhqFCnG3th7dkFxgUk+aI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/MzOyMWKZocAw7Z2Dhj7mX58HT82zVqg3QTDD3lSJ4=
+			0jCMcvwojHL6PZuoe8CjKaoliVVT3cJuthUAEh4Q6a4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -407,7 +467,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpG8XiCzOjEwtMgB8xbwJa38IeHoU1biRbnxa3mIvZQ=
+			icBcwg/YSF1uWbTk7STi/59amdA1Cvinwj0YHF0X76c=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/file.svg</key>
@@ -415,6 +475,20 @@
 			<key>hash2</key>
 			<data>
 			IKqQWfhKZrKpKjrzSYAiA6Vm2jSZBDEuRQgvUjmEiUE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/git_stats.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DKmfsqkTax97ZKyYpYUhi2tZL7Y6IX0GizRluy/8w44=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/pdf/flutter.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z8l8XfmfmOCgsQR/n72q9phqRtUDeYbAQD6yHqiH79Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -435,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5JZD3Au0moU4ec2XjVSy72OnOyV3IEa63/gF8XHLy44=
+			ooHmOijltxmwX7l+dfJF5y6cK3XJ4EVH9QI78qGtd0c=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -464,6 +538,34 @@
 			<key>hash2</key>
 			<data>
 			8c4NoSoB9+wVrmnE7VSZnqh1vSNuYv71isTdvLObNno=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/highlight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7S9xpxKH0Xe8w1gpKG7EgrRm6yNwRonaEyX5rw0olao=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/squiggly.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7bgfUlMdMgbze9YmpXWeWXrdlJflb2QkWeJZNb3PpQs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/strikethrough.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bbNUrnKxl2z24VaWk+oENMcdr9+GlbqUIYgDhGWtNC0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/syncfusion_flutter_pdfviewer/assets/underline.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k5XgJGUcOFg9eqyiJGr0eAO2lgw62E3iNyghuKXMoE8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
@@ -634,6 +736,48 @@
 			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
 			</data>
 		</dict>
+		<key>Frameworks/device_info_plus.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/q279bfznTZZlYHSg5HpxMdzB8mAeb7S4Jpc83pazMc=
+			</data>
+		</dict>
+		<key>Frameworks/device_info_plus.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ft0plJ3ImcPeXcCcrCyZfo0GOKI5Qux6Jp7c7m5gSRM=
+			</data>
+		</dict>
+		<key>Frameworks/device_info_plus.framework/device_info_plus</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54/5mYRlzbFgnNw1JqQRZ4eMSRww0dGtQBs2Ov95DOU=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_pdfview.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/6Osi4BXqSqXVp6MTQGJ2xpH0nv0LrIEBzcHzU5O24U=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_pdfview.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SGXegXkvBvZYNHyPH1oi4t8KNAMM+pd+jaK5OSoAMko=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_pdfview.framework/flutter_pdfview</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AnQoNbh4z5qHs4CM7IarKqIk+x+p0teNGEw46qWmHV8=
+			</data>
+		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -702,6 +846,27 @@
 			<key>hash2</key>
 			<data>
 			RyJqKWCN8gatChEOav61p3/1dawd+cdr/bLW37P6/tE=
+			</data>
+		</dict>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YUJLUAvdT1fyifzid3ySJnXVqbXwLeGHMX5x5b6Vgws=
+			</data>
+		</dict>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qlaiFTvqkZpxSEFnbPgvwEdkOJtIH4HazIX/2iHsg0c=
+			</data>
+		</dict>
+		<key>Frameworks/syncfusion_flutter_pdfviewer.framework/syncfusion_flutter_pdfviewer</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JtZ01sy4ThItJTie7ruulf4zmLmnzdxRxgd5oA+M2lY=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
