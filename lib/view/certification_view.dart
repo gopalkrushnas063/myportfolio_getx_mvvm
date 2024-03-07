@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:myportfolio_getx_mvvm/controller/certification_controller.dart';
 
 class CertificationView extends StatelessWidget {
-  final CertificationController _certificationController = Get.find();
+  final CertificationController _certificationController = Get.put(CertificationController());
 
   @override
   Widget build(BuildContext context) {

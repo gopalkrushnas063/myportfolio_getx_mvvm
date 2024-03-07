@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:myportfolio_getx_mvvm/controller/certification_controller.dart';
-import 'package:pie_chart/pie_chart.dart';
 
 Drawer buildDrawer(BuildContext context) {
   return Drawer(
@@ -43,7 +41,7 @@ Drawer buildDrawer(BuildContext context) {
                         ),
                       ),
                       Text(
-                        "My Profile",
+                        "Gopal Krushna Sahoo",
                         style: GoogleFonts.actor(
                           textStyle: const TextStyle(
                             color: Colors.white,
@@ -163,7 +161,6 @@ Drawer buildDrawer(BuildContext context) {
                   ),
                 ),
                 onTap: () {
-                  Get.put(CertificationController());
                   Get.toNamed("/certification");
                 },
               ),
