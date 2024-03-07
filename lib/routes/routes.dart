@@ -43,7 +43,7 @@ final allPage = [
   GetPage(
     name: "/resume",
     page: () => ResumeView(),
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.rightToLeftWithFade,
   ),
   
 ];
