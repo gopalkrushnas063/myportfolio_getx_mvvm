@@ -42,7 +42,7 @@ final allPage = [
   ),
   GetPage(
     name: "/resume",
-    page: () => ResumeView(),
+    page: () => ResumeScreen(),
     transition: Transition.rightToLeftWithFade,
   ),
   

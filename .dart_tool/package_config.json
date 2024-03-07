@@ -8,6 +8,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/archive-3.4.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "args",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/args-2.4.2",
       "packageUri": "lib/",
@@ -18,6 +24,24 @@
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "auto_size_text",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/auto_size_text-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "barcode",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/barcode-2.2.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bidi",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/bidi-2.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "boolean_selector",
@@ -104,6 +128,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/dio-5.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -152,6 +182,18 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_resume_template",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/flutter_resume_template-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "flutter_shake_animated",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/flutter_shake_animated-0.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_svg",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/flutter_svg-2.0.10+1",
       "packageUri": "lib/",
@@ -183,7 +225,7 @@
     },
     {
       "name": "google_fonts",
-      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/google_fonts-6.2.0",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/google_fonts-4.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -194,10 +236,22 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "http_mock_adapter",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/http_mock_adapter-0.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/image-4.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "intl",
@@ -308,6 +362,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "pdf",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/pdf-3.10.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "petitparser",
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
@@ -330,6 +390,18 @@
       "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "pointycastle",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/pointycastle-3.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "qr",
+      "rootUri": "file:///Users/wayinida/.pub-cache/hosted/pub.dev/qr-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
     },
     {
       "name": "rxdart",
@@ -614,7 +686,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-03-06T10:08:35.998503Z",
+  "generated": "2024-03-07T06:44:29.402134Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

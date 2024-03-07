@@ -1,37 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_resume_template/flutter_resume_template.dart';
+import 'package:get/get.dart';
+import 'package:myportfolio_getx_mvvm/controller/resume_controller.dart';
+import 'package:myportfolio_getx_mvvm/data/resume_data.dart';
 
-class ResumeView extends StatelessWidget {
-  ResumeView({Key? key}) : super(key: key);
-
-  // Create a webview controller
-  final _controller = WebViewController()
-    ..setJavaScriptMode(JavaScriptMode.unrestricted)
-    ..setNavigationDelegate(
-      NavigationDelegate(
-        onProgress: (int progress) {
-          // print the loading progress to the console
-          // you can use this value to show a progress bar if you want
-          debugPrint("Loading: $progress%");
-        },
-        onPageStarted: (String url) {},
-        onPageFinished: (String url) {},
-        onWebResourceError: (WebResourceError error) {},
-        onNavigationRequest: (NavigationRequest request) {
-          return NavigationDecision.navigate;
-        },
-      ),
-    )
-    ..loadRequest(Uri.parse("https://cdn.syncfusion.com/content/PDFViewer/flutter-succinctly.pdf"));
+class ResumeScreen extends StatelessWidget {
+  const ResumeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SizedBox(
-          width: double.infinity,
-          child: WebViewWidget(
-            controller: _controller,
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("My Resume"),
+      ),
+      body: SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            minHeight: MediaQuery.of(context).size.height,
+          ),
+          child: GetBuilder<ResumeController>(
+            init: ResumeController(),
+            builder: (controller) {
+              return FlutterResumeTemplate(
+                data: data,
+                templateTheme: controller.theme.value,
+                mode: TemplateMode.onlyEditableMode,
+                showButtons: false,
+                imageBoxFit: BoxFit.cover,
+                // Remove the fixed height to allow flexible sizing
+                // height: 2500,
+              );
+            },
           ),
         ),
       ),

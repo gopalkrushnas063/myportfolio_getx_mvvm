@@ -1,0 +1,11 @@
+framework module flutter_resume_template {
+  umbrella header "flutter_resume_template-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_resume_template.Swift {
+  header "flutter_resume_template-Swift.h"
+  requires objc
+}
