@@ -74,7 +74,7 @@ I thrive in collaborative environments and enjoy working closely with cross-func
 ''';
 
 TemplateData data = TemplateData(
-    fullName: 'Alicia Smith',
+    fullName: 'Gopal Krushna Sahoo',
     currentPosition: 'Flutter Developer',
     street: 'Curvy Str. 53',
     address: 'Berlin, 14568',
